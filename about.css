@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #eeeeee;
+  padding: 1rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 1;
+  color: #551a8b;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+
+sup {
+  color: #551a8b;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: #551a8b;
+}
+
+nav {
+  background: #551a8b;
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+nav a,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #551a8b;
+  background-color: white;
+}
+
+.content {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.evenemang {
+  width: 100%;
+  text-align: center;
+}
+
+.evenemang-bild {
+  width: 100%;
+  display: block;
+  margin-top: 0;
+}
+
+.evenemang h3 {
+  margin-bottom: 5px;
+}
+
+main {
+  flex: 3;
+  background: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+aside {
+  flex: 1;
+  background: #eeeeee;
+  padding: 1rem;
+}
+
+footer {
+  background: #eeeeee;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.copy {
+  color: black;
+}
+
+div.simple-page-content {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table td {
+  width: 50%;
+  padding: 15px;
+  vertical-align: top;
+}
+
+td.header {
+  background-color: #dddddd;
+  font-weight: bold;
+  padding: 8px;
+}
+
+small {
+  color: #555;
+  font-size: 0.9em;
+}
+
+sup.new {
+  font-weight: bold;
+  color: orange;
+  margin-left: 0.5em;
+}
+
+@media (max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  div.simple-page-content {
+    margin: 10px;
+    max-width: 100%;
+  }
+}
